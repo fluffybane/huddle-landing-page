@@ -1,0 +1,141 @@
+:root {
+    --width-mobile: 375px;
+    --width-desktop: 1440px;
+
+    --color-violet: hsl(257, 40%, 49%);
+    --color-magenta: hsl(300, 69%, 71%);
+
+    --font-headings-family: "Poppins", sans-serif;
+    --font-headings-weight: 600;
+
+    --font-body-family: "Open Sans", sans-serif;
+    --font-body-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--color-violet);
+    background-image: url("../images/bg-desktop.svg");
+
+    padding-bottom: 60px;
+}
+
+header {
+    padding: 1.5rem 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#logo {
+    width: 150px;
+}
+
+#jumbo {
+    display: flex;
+    padding: 1.5rem 8rem;
+}
+
+.column {
+    flex: 100%;
+}
+
+#left {
+    flex-basis: 115%;
+}
+
+.column img {
+    max-width: 100%;
+}
+
+#jumbo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#jumbo-text h1 {
+    line-height: 1.3em;
+    font-size: 40px;
+    font-family: var(--font-headings-family);
+    font-weight: var(--font-headings-weight);
+
+    color: #fff;
+
+    margin-bottom: 20px;
+}
+
+#jumbo-text p {
+    line-height: 1.5em;
+    font-size: 18px;
+    font-family: var(--font-body-family);
+    font-weight: var(--font-body-weight);
+
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+#button-register {
+    padding: 20px 10px;
+    background: #fff;
+    color: var(--color-violet);
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+
+    font-family: var(--font-headings-family);
+    font-weight: 400;
+    font-size: 18px;
+
+    border-radius: 50px;
+}
+
+footer {
+    padding: 1.5rem 8rem;
+
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+footer a {
+    border: 2px solid #fff;
+    border-radius: 100%;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+footer img {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%) sepia(100%) saturate(6481%) hue-rotate(180deg) brightness(100%) contrast(143%);
+    
+    display: block;
+    margin: auto;
+}
+
+@media screen and (max-width: 960px) {
+
+    header,
+    #jumbo,
+    footer {
+        padding: 1.5rem 3.5rem;
+    }
+
+    #jumbo {
+        flex-direction: column;
+    }
+
+    #jumbo-text {
+        margin-top: 30px;
+        padding: 0;
+    }
+}
