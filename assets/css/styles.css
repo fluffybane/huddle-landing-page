@@ -62,7 +62,7 @@ header {
     padding-right: 50px;
 }
 
-#jumbo-text h1 {
+h1 {
     line-height: 1.3em;
     font-size: 40px;
     font-family: var(--font-headings-family);
@@ -73,7 +73,7 @@ header {
     margin-bottom: 20px;
 }
 
-#jumbo-text p {
+p {
     line-height: 1.5em;
     font-size: 18px;
     font-family: var(--font-body-family);
@@ -84,10 +84,10 @@ header {
 }
 
 #button-register {
-    padding: 20px 10px;
+    padding: 12px 10px;
     background: #fff;
     color: var(--color-violet);
-    width: 150px;
+    width: 200px;
     text-align: center;
     text-decoration: none;
 
@@ -130,6 +130,16 @@ footer img {
         padding: 1.5rem 3.5rem;
     }
 
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 16px;
+        text-align: center;
+    }
+
     #jumbo {
         flex-direction: column;
     }
@@ -137,5 +147,14 @@ footer img {
     #jumbo-text {
         margin-top: 30px;
         padding: 0;
+    }
+
+    #button-register {
+        padding: 10px 5px;
+        margin: 0 auto;
+    }
+
+    footer {
+        justify-content: center;
     }
 }
